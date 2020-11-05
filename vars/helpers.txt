@@ -1,0 +1,15 @@
+# Helpers
+
+### jobListInsideFolder(folderName) - Returns a list of job full names inside the found folder and its subfolders
+```groovy 
+    def jobList = jobListInsideFolder('Project/NextFolder') 
+```
+
+Would return something like this
+```groovy 
+    [
+        'Project/NextFolder/Job 1', 
+        'Project/NextFolder/Job 2',    
+        'Project/NextFolder/SubFolder/Job 3' 
+    ] 
+```
